@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "Personal_assistant"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Yevpat <maracasabat@gmail.com>"]
+packages = [
+    { include = "Personal_assistant" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pick = "1.2.0"
+prettytable = "^3.3.0"
+termcolor2 = "^0.0.3"
+setuptools = "^63.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "Personal_assistand.main:main"
+
